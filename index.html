@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link href='https://fonts.googleapis.com/css?family=Bangers|Chewy|Permanent+Marker' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Chewy|Permanent+Marker|Montserrat' rel='stylesheet' type='text/css'>
 		<style type="text/css">
 			html, body {
-				/*font-family: 'Bangers', cursive;*/
+				font-family: 'Montserrat', sans-serif;
 				/*font-family: 'Permanent Marker', cursive;*/
 				padding: 0;
 				margin: 0;
 				height: 100%;
-
-				/* can be treated like a fallback */
-				background-color: #49a5bf;
-
-				/* will be "on top", if browser supports it */
-				background-image: linear-gradient(#49a5bf, orange);
-
-				/* these will reset other properties, like background-position, but it does know what you mean */
-				background: #49a5bf;
-				background: linear-gradient(#49a5bf, orange);
-
+				background-color: #f1f1f1;
 			}
 			#container {
+				height: 100%;
 				width: 1000px;
 				margin: 0 auto;
+				/*border-left: 1px solid #E6E6E6;*/
+				/*border-right: 1px solid #E6E6E6;*/
 			}
+			.wrapper {
+				height: 100%;
+				padding-left: 20px;
+				padding-right: 20px;
+				/* can be treated like a fallback */
+				/*background-color: #49a5bf;*/
 
+				/* will be "on top", if browser supports it */
+				/* 7AD6F1 - light blue */
+				/* 49a5bf - darker light blue */
+				/*background-image: linear-gradient(#49a5bf, #7AD6F1);*/
+
+				/* these will reset other properties, like background-position, but it does know what you mean */
+				/*background: #49a5bf;*/
+				/*background: linear-gradient(#49a5bf, #7AD6F1);*/
+
+			}
 			.header {
 
 			}
@@ -40,7 +49,7 @@
 				}
 				50% {
 					transform: scale(1.05);
-					color: orange;
+					color: red;
 				}
 				75% {
 					/*transform: scale(1.1) rotate(15deg);*/
@@ -56,11 +65,16 @@
 			}
 
 			.header {
-				padding-bottom: 50px;
+				padding: 25px;
+				background-color: #000;
+				box-shadow: 3px 3px 5px 6px #ccc;
 			}
 
 			.header h1 {
 				text-align: center;
+				color: red;
+				font-size: 3em;
+				text-transform: uppercase;
 			}
 
 			.headliner .phone h1 {
@@ -69,6 +83,7 @@
 				text-align: center;
 				animation: pulse 2000ms infinite;
 				color: red;
+				text-shadow: 1px 1px 1px #000;
 			}
 			.headliner .join {
 				position: absolute;
@@ -81,55 +96,72 @@
 				text-align: center;
 				transform: rotate(-45deg);
 				line-height: 1em;
-				color: #444;
-			}
-			h2 {
-
+				color: #696969;
 			}
 
-			#burst-8 {
-				background: red;
-				width: 125px;
-				height: 125px;
-				position: relative;
+			.headliner .call {
+				float: right;
+				background: url('images/yellow_starburst.png');
+				background-size: cover;
+				height: 200px;
+				width: 250px;
+			}
+
+			.marketing-stub {
 				text-align: center;
-				-webkit-transform: rotate(20deg);
-				-moz-transform: rotate(20deg);
-				-ms-transform: rotate(20deg);
-				-o-transform: rotate(20eg);
 			}
-			#burst-8:before {
-				content: "";
-				position: absolute;
-				top: 0;
-				left: 0;
-				height: 125px;
-				width: 125px;
-				background: red;
-				-webkit-transform: rotate(135deg);
-				-moz-transform: rotate(135deg);
-				-ms-transform: rotate(135deg);
-				-o-transform: rotate(135deg);
+			.marketing-stub .call h3 {
+				font-family: 'Permanent Marker', cursive;
+				font-size: 2em;
+			}
+			.marketing-stub .call h3 a {
+				text-decoration: none;
+			}
+			.marketing-stub .alt-title {
+				font-size: 1.5em;
+				font-style: italic;
+			}
+			span.emphasizes {
+				font-style: italic;
+				text-decoration: underline;
 			}
 		</style>
 	</head>
 	<body>
+		<div class="header">
+			<h1>SEO Hotline</h1>
+		</div>
 		<div id="container">
-			<div class="header">
-				<h1>SEO Hotline</h1>
+			<div class="wrapper">
+				<div class="headliner">
+					<div class="join">
+						<h3>Join the Club!</h3>
+					</div>
+					<div class="phone">
+						<h1>1 805 612 6420 </h1>
+					</div>
+				</div>
+				<div class="marketing-stub">
+					<p class="alt-title">You're moments away from joining the hottest club on the net!</p>
+					<div class="call">
+						<h3><a href="tel:18056126420">Call Now!</a></h3>
+					</div>
+					<p class="flavor-text">Attractive SEO experts are waiting to answer <span class="emphasizes">your</span> questions.</p>
+				</div>
+
+				<div class="testiment">
+					<div class="headshot">
+						<img src="images/ladyrep.jpg" />
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<div class="testiment">
+					<div class="headshot">
+						<img src="images/manrep.jpg" />
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
 			</div>
-			<div class="headliner">
-				<div class="join">
-					<h3>Join the Club!</h3>
-				</div>
-				<div class="phone">
-					<h1>1 805 612 6420 </h1>
-				</div>
-				<div class="call">
-					<h3>Call Now!</h3>
-				</div>
-			</div>
-			<p>Attractive SEO experts are waiting to take your questions</p>
 		</div>
 
 	</body>
