@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title>SEO Hotline -  SEO experts wanting to talk to YOU!</title>
 		<link href='https://fonts.googleapis.com/css?family=Chewy|Permanent+Marker|Montserrat' rel='stylesheet' type='text/css'>
 		<style type="text/css">
 			html, body {
@@ -22,6 +23,7 @@
 				height: 100%;
 				padding-left: 20px;
 				padding-right: 20px;
+				padding-bottom: 30px;
 				/* can be treated like a fallback */
 				/*background-color: #49a5bf;*/
 
@@ -35,10 +37,6 @@
 				/*background: linear-gradient(#49a5bf, #7AD6F1);*/
 
 			}
-			.header {
-
-			}
-
 			@keyframes pulse {
 				from {
 					transform: scale(1);
@@ -68,6 +66,9 @@
 				padding: 25px;
 				background-color: #000;
 				box-shadow: 3px 3px 5px 6px #ccc;
+				/*position: fixed;*/
+				/*width: 100%;*/
+				/*z-index: 9;*/
 			}
 
 			.header h1 {
@@ -76,7 +77,13 @@
 				font-size: 3em;
 				text-transform: uppercase;
 			}
-
+			.footer {
+				clear: both;
+				padding: 15px;
+				background-color: #000;
+				color: red;
+				text-align: right;
+			}
 			.headliner .phone h1 {
 				font-family: 'Chewy', cursive;
 				font-size: 7em;
@@ -114,9 +121,17 @@
 				font-family: 'Permanent Marker', cursive;
 				font-size: 2em;
 			}
+
 			.marketing-stub .call h3 a {
+				transition: color 0.2s ease;
+				color: blue;
 				text-decoration: none;
 			}
+
+			.marketing-stub .call h3 a:hover {
+				color: #19A9D8;
+			}
+
 			.marketing-stub .alt-title {
 				font-size: 1.5em;
 				font-style: italic;
@@ -124,6 +139,23 @@
 			span.emphasizes {
 				font-style: italic;
 				text-decoration: underline;
+			}
+
+			.testiment {
+				padding: 5px;
+				background-color: white;
+				width: 400px;
+				border-radius: 5px;
+			}
+
+			.testiment.left {
+				float: left;
+				text-align: left;
+
+			}
+			.testiment.right {
+				float: right;
+				text-align: right;
 			}
 		</style>
 	</head>
@@ -149,13 +181,13 @@
 					<p class="flavor-text">Attractive SEO experts are waiting to answer <span class="emphasizes">your</span> questions.</p>
 				</div>
 
-				<div class="testiment">
+				<div class="testiment left">
 					<div class="headshot">
 						<img src="images/ladyrep.jpg" />
 					</div>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
-				<div class="testiment">
+				<div class="testiment right">
 					<div class="headshot">
 						<img src="images/manrep.jpg" />
 					</div>
@@ -163,6 +195,8 @@
 				</div>
 			</div>
 		</div>
-
+		<div class="footer">
+			foot
+		</div>
 	</body>
 </html>
